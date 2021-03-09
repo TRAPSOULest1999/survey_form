@@ -1,11 +1,77 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet"type="text/css" href="css/survey.css">
   </head>
   <body>
-    <h1 id="title">Brainy Tech Survey Form</h1>
+  <h1 id="title">Brainy Tech Survey Form</h1>
+  <p id="description">A survey on employee knowledge of emerging technologies</p>
+  <form id="survey-form" action="index.html" method="post">
+    <label id="name-label">Name:</label>
+    <input type="text" name="name" id="name" required placeholder="Name and Surname"></input><br>
+    <label id="email-label" >Email:</label>
+    <input type="email" name="email" id="email" required placeholder="Email Address"></input><br>
+    <label id="number-label">Number:</label>
+    <input type="number" id="number" name="phone" min="0" max="10" required placeholder="#"></input><br>
+
+<div class="center">
+<label id="Employee-department-label"> Select your current department:</label>
+</div>
+
+<div class="center">
+<select id="dropdown" name="Employee-department">
+<option value="Human Resources"> Human Resources </option>
+<option value="Intern"> Intern </option>
+<option value="Marketing and Sales"> Marketing and Sales </option>
+<option value="Legal Team"> Legal Team </option>
+<option value="General Management"> General Management </option>
+<option value="Executive"> Executive </option>
+</select>
+</div>
+
+<br><input type="radio" id="male" name="gender" value="male">
+<label for="male"> Male </label><br>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female"> Female </label><br>
+<input type="radio" id="Non-binary identfying" name="gender" value="Non-binary identfying">
+<label for="Non-binary identfying"> Non-binary identfying</label><br>
+<input type="radio" id="Other" name="gender" value="Other">
+<label for="Other"> Other/Prefer Not to say</label><br>
+
+
+<br><input type="checkbox" id="IoT" name="IoT" value="Internet-of-Things">
+<label for="IoT"> Internet-of-Things(IoT)</label><br>
+<input type="checkbox" id="AR" name="AR" value="AR">
+<label for="AR">Augmented Reality(AR)</label><br>
+<input type="checkbox" id="vr" name="vr" value="vr">
+<label for="vr"> Virtual Reality(VR) </label><br>
+<input type="checkbox" id="5g" name="5g" value="5g">
+<label for="5g"> 5G Technology </label><br>
+<input type="checkbox" id="robotics" name="robotics" value="robotics">
+<label for="robotics"> Robotics </label><br>
+<input type="checkbox" id="ai" name="ai" value="ai">
+<label for="ai"> Artificial Intellignence(AI) </label><br>
+<input type="checkbox" id="ml" name="ml" value="ml">
+<label for="ml"> Machine Learning(ML) </label><br>
+<input type="checkbox" id="blockchain" name="blockchain" value="bloackchain">
+<label for="blockchain"> Blockchain </label><br>
+<input type="checkbox" id="qc" name="qc" value="qc">
+<label for="qc"> Quantam Computing </label><br>
+<input type="checkbox" id="bio" name="bio" value="bio">
+<label for="Biotechnology"> Biotechnology </label><br>
+<input type="checkbox" id="none" name="none" value="none">
+<label for="none"> None of the above </label><br>
+
+<div class="center">
+  <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..." spellcheck="false"></textarea>
+</div>
+
+<div class="center"><br><input type="submit" id="submit">
+</div>
+  </form>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
